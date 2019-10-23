@@ -354,6 +354,24 @@ template {
   background-color: #4b8870;
 }
 
+.hamb{
+  margin-left: 20px;
+  width: 70px;
+}
+
+.hamb:active + ul {
+  display: initial;
+}
+
+#hambinput {
+  display: none;
+}
+
+#hamb-input:checked + ul {
+  display: block;
+  background-color: red;
+}
+
 @media screen and (min-width: 768px) {
   .barrnav ul {
     -ms-flex-direction: row;
@@ -361,11 +379,17 @@ template {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .hamb{
+    display : none;
+  }
 }
 
-html.accueil {
-  background-image: url("../img/accueil.jpg");
-  background-size: cover;
+img {
+  width: 100%;
+}
+
+.titre {
+  text-align: center;
 }
 
 /*# sourceMappingURL=mon_site.css.map */
